@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto de Cifrado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<img src="logoalura.png" alt="Logo Alura" class="logo">
+
+<main>
+    <h1></h1>
+
+    <div class="content-wrapper">
+        <div class="input-section">
+            <label for="textoEntrada">Ingrese texto aquí</label><br>
+            <textarea id="textoEntrada" rows="4" cols="50"></textarea>
+        </div>
+        
+        
+        <div class="container">
+            <img src="Rectangle.png" alt="Rectángulo blanco" class="miImagen rectangle">
+            <img src="Muñeco.png" alt="Muñeco con una lupa" class="imagen">
+            <div class="mensaje">
+                <p id="mensajeNoEncontrado">Ningún mensaje fue encontrado</p>
+                <p id="mensajeIngresoTexto">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="output-section hidden" id="outputSection">
+                <label for="textoSalida">Texto Resultante:</label><br>
+                <textarea id="textoSalida" rows="4" cols="50" readonly></textarea><br><br>
+                <button id="btnCopiar" class="boton">Copiar</button>
+                <p id="mensajeValidacion" style="color:red;"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="botones-wrapper">
+        <button id="btnCifrar" class="boton">Encriptar</button>
+        <button id="btnDescifrar" class="boton">Descencriptar</button>
+    </div>
+</main>
+
+<footer>
+    <p>Creado por [Henry Giovanny Medina Aponte], 2024</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
